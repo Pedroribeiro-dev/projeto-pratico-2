@@ -1,0 +1,232 @@
+@import url('https://fonts.cdnfonts.com/css/outfit7');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('./assets/images/universo-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones-sociais {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+i {
+    font-size: 1.3rem;
+    color: white;
+}
+
+i:hover {
+    color: gold;
+}
+
+#characters {
+    font-size: 20px;
+    color: white;
+    font-family: 'Outfit7', sans-serif;
+}
+
+#characters:hover {
+    color: gold;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    padding-top: 15px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+
+}
+
+.titulo {
+    font-family: 'Outfit7', sans-serif;
+    color: gold;
+    font-weight: lighter;
+    font-size: 35px;
+
+}
+
+.characters-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.characters-content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 10px;
+    padding: 10px 20px;
+}
+
+.cards {
+    width: 230px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.name-characters-box {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 95%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.characters-name {
+    font-family: 'Outfit7', sans-serif;
+    color: gold;
+    font-size: 16px;
+}
+
+.botoes-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes-navegacao {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botoes {
+    width: 100px;
+    height: 30px;
+    font-family: 'Outfit7', sans-serif;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botoes:hover {
+    background-color: gold;
+}
+
+#voltar {
+    visibility: hidden;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.titulo-footer {
+    font-family: 'Outfit7', sans-serif;
+    color: white;
+    font-weight: lighter;
+    padding: 5px 0;
+}
+
+.desenvolvido-por {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+#modal {
+    visibility: hidden;
+    /*se voce aplica um hidden na div pai , voce acaba por esconder as filhas tambem*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.623);
+    position: fixed;
+    top: 0;
+    /* aqui como demos um position fixed  para modal , e demos center em align e justify que vai interferir na posiçao dos filhos a nossa modal content
+    vai ficar centralizado sempre na visao do usuario entao independente de eu scrolar ou nao ele vai ta no meio da tela (lembrando que atraves de js vamos
+    fazer com que so apareca quando clicar)*/
+}
+
+#modal-content {
+    width: 35vh;
+    height: 35vh;
+    background-color: rgb(58, 58, 58);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.data-modal {
+    font-family: 'Outfit7', sans-serif;
+    font-size: 16px;
+    color: gold;
+
+}
+
+.image-modal {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
